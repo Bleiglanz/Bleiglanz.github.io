@@ -31,8 +31,19 @@ it will be sucked into implicit parameters of functions.
 
 
 
-## SQL
+## Github
 
+Store your password
+```
+$ git config credential.helper store
+$ git push https://github.com/repo.git
+
+Username for 'https://github.com': <USERNAME>
+Password for 'https://USERNAME@github.com': <PASSWORD>`
+```
+Also see (this)[https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-https-to-ssh]
+
+## Trash
 - Programming
 - Databases
 
