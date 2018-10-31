@@ -1,3 +1,5 @@
+#Knowledge base
+
 ## Scala Collections
 
 Use `+(k->v)` to add elements to a Map
@@ -41,7 +43,7 @@ $ git push https://github.com/repo.git
 Username for 'https://github.com': <USERNAME>
 Password for 'https://USERNAME@github.com': <PASSWORD>`
 ```
-Also see (this)[https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-https-to-ssh]
+Also see [this]([https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-https-to-ssh)
 
 ## Trash
 - Programming
@@ -49,8 +51,9 @@ Also see (this)[https://help.github.com/articles/changing-a-remote-s-url/#switch
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+[Link](url) 
+and ![Image](https://www.scala-lang.org/resources/img/frontpage/scala-spiral.png)
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
