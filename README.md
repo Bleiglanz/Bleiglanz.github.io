@@ -1,5 +1,3 @@
-# Welcome to Bleiglanz
-
 ## Scala Collections
 
 Use `+(k->v)` to add elements to a Map
@@ -8,8 +6,22 @@ Use `+(k->v)` to add elements to a Map
 
 Syntax for a lambda 
 ```scala
-val lambda = (x:Int)=>`
+val lambda = (x:Int)=>expression
 ```
+Note: the bracketes around `x:Int` are probably necessary
+
+Suppose you have defined a funktion
+```scala
+def f(x:Type):ResultType = expression
+```
+then the literal `f` cannot be used as a value (because the compiler would like to apply this to some argument),
+use Eta-expansion in this situation
+```scala
+val fAsLambda = f _
+```
+The underscore transforms the function to a lambda value.
+
+
 
 
 
