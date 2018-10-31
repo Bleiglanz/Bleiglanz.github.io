@@ -21,6 +21,12 @@ val fAsLambda = f _
 ```
 The underscore transforms the function to a lambda value.
 
+## Scala implicits
+If one declares a variable 
+```scala
+implicit val foo = 3
+```
+it will be sucked into implicit parameters of functions.
 
 
 
