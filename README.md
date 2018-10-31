@@ -1,6 +1,18 @@
 # Welcome to Bleiglanz
 
-## Scala
+## Scala Collections
+
+Use `+(k->v)` to add elements to a Map
+
+## Scala Functions and Methods
+
+Syntax for a lambda 
+```scala
+val lambda = (x:Int)=>`
+```
+
+
+
 ## SQL
 
 - Programming
