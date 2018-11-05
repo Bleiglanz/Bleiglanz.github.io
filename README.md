@@ -1,4 +1,4 @@
-#Knowledge base
+###Knowledge base
 
 ## Scala Collections
 
@@ -30,6 +30,35 @@ implicit val foo = 3
 ```
 it will be sucked into implicit parameters of functions.
 
+## Scala Traversable
+Important methods
+```scala
+++  // left followed by right, left determines type of result
+++: // left followed by right, right determans type of result
+/:  // fold left
+:\  // fold right
+addString     // add everything to StringBuilder
+aggregate     // aggregate using to operators (B,A)=>B (like map) and (B,B)=>B (like fold)
+              // more general than fold or reduce
+collect       // apply a partial function
+collectFirst  // apply a partial function to the first element where it is defined
+companion     // factory companion to build Traversable
+copyToArray   // copies elements to Array
+copyToBuffer  // copies elements to Buffer
+count         // number of elements for which predicate is true
+drop          // new collection with all but the first n
+dropWhile     // drop elements not satisfying a predicate
+exists        // does there exist an element satisfying this predicate
+filter        // ignore some
+filterNot     // invert given predicate
+find          // headOption circ filter (find the first)
+flatMap       // apply collection producing function and flatten
+flatten       // remove package level
+fold          // use associative binary operator
+foldLeft      // /:
+foldRight     // :\
+forall        // do all elements satisfy the predicate?
+```
 
 
 
@@ -64,3 +93,6 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+
