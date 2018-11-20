@@ -59,8 +59,25 @@ foldLeft      // /:
 foldRight     // :\
 forall        // do all elements satisfy the predicate?
 ```
+## Scala Curry
+If you want real currying, then define your function like this
+```scala 
+def foo(x:Int)(y:Int):ResType = ... 
+```
+In this case ```scala foo(3)``` evaluates to a function from integers to Restype!
+Nice application: Since we can write single arguments with curly braces, a definition like
+```scala 
+def repeate(x:Int)(x :=> Unit):ResType = ... 
+```
+gives you a way to create a nice syntax like ```scala repeat(3){block}```
 
 
+## Scala Implicits
+there are implicit functions arguments
+there are implicit values (single named in scope)
+and
+there are implicit conversions to allow reciever conversion `3.getFibonacci` is not defined,
+but the `3` can be automatically converted to something that understands the method call.
 
 ## Github
 
