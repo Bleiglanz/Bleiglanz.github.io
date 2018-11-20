@@ -101,6 +101,7 @@ for(a <- g1, b<- g2)...                    // flatMap
 clarify
 
 
+
 ## Github
 
 Store your password
