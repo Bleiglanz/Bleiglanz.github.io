@@ -63,6 +63,9 @@ forall        // do all elements satisfy the predicate?
 If you want real currying, then define your function like this
 ```scala 
 def foo(x:Int)(y:Int):ResType = ... 
+def hoo = f(3)(_:Int) 
+def normalf(a:Int):Res = ...
+def normalc = (f_).curried
 ```
 In this case ```scala foo(3)``` evaluates to a function from integers to Restype!
 Nice application: Since we can write single arguments with curly braces, a definition like
@@ -73,11 +76,30 @@ gives you a way to create a nice syntax like ```scala repeat(3){block}```
 
 
 ## Scala Implicits
-there are implicit functions arguments
-there are implicit values (single named in scope)
-and
-there are implicit conversions to allow reciever conversion `3.getFibonacci` is not defined,
+There are implicit functions arguments, there are implicit values (single named in scope)
+and there are implicit conversions to allow reciever conversion `3.getFibonacci` is not defined,
 but the `3` can be automatically converted to something that understands the method call.
+
+## Scala Lists
+A list is a cons cell. First element is a A, second element is a List
+`Nil` is the empty list, of type `Nothing`, and `List(1)==1::Nil`
+
+## Scala case classes
+Nice: `apply, unapply, copy, equals, hashcode, toString`
+Nice: don't have to use `new`
+Jargon: Lenses are a pattern for copying in deeply nested structures
+
+## Scala for comprehension
+```scala
+for(variable <- generator) yield ...       // map
+for(variable <- generator) { sideeffect }  // foreach
+for(variable <- generator if variable ...) // withFilter
+for(a <- g1, b<- g2)...                    // flatMap
+```
+
+## for comprehension together with Option
+clarify
+
 
 ## Github
 
