@@ -114,6 +114,49 @@ Password for 'https://USERNAME@github.com': <PASSWORD>`
 ```
 Also see [this]([https://help.github.com/articles/changing-a-remote-s-url/#switching-remote-urls-from-https-to-ssh)
 
+
+## Emacs
+```
+CxCf open file
+CxCv open alternate file
+Cxi  insert file
+CxCs save file
+CxCw write file (new name)
+CxCc exit
+Cf   forward
+Cb   backward
+Cp   lineup
+Cn   linedown
+Mf   next word
+Mb   prev word
+Ca   beginning of line
+Ce   end of line
+Me   forward sentence
+Ma   backward sentence
+Cv   scroll up
+Mv   scroll down
+M<   begin
+M>   end
+     Mx goto-line
+     Mx goto-char
+M<n> repeat next cmd n times
+Cu<n>repeat next 4 times (without n) or n times
+Cd   delete char
+DEL  delete left
+Md   delete word
+MDEL delete left word
+Cy   yank
+Cw   cut region
+CxCx exchange pint and mark
+Mx   kill ring save (what others call copy)
+Cxh  mark buffer
+My   yank-pop
+M!   shell command
+Co   other window
+Mp   in shell: repeat command
+```
+
+
 ## Trash
 - Programming
 - Databases
