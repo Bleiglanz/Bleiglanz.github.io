@@ -370,4 +370,57 @@ Lambdas (unnamed functions) via `|arglist|{body}`
 
 the `let` is already pattern matching `let (a,b)=...`
 
+`vector.get` returns an Option, also: `std::mem::replace/swap_remove`
+
+if you add to strings `a + b` then the first summand is consumed
+
+strings cannot be indexed
+
+Option has a `take` method, it moves out and replaces with None => it empties the Option
+
+match guards are patterns of the for `pat if ... => `, just handy
+
+match handles without move: `match x { Foo(ref x) => ...}` doesn't move x, in the clause there is a ref to `x`
+
+`Result<T,E>` is quite important, ADT with `Ok(t)` and `Err(e)` as values, unwrap and expect, propagate with `?`, unwrap_or_else
+
+propagate in chains `foo()?.bar()?.baz()?` (again, this is only allowed inside methods)
+
+`#derive(Copy,Clone)` for a struct if a value-type is needed
+
+learn more about refs, study `Rc` and `ARc` the (atomic) reference counter refs, pythonify Rust, value immuteable
+
+under certain conditions it is possible to generate a ref-loop using `Rc`
+
+Also `Box<T>` is a pointer to something on the heap, some compiler magic here
+
+Important: the dot `.`, the comparisions `== <= >=` deref a ref implicitly (no need for `**`)
+
+Obviously some refs in Rust are fat pointers (`&[T]` has a size, String has a length,..)
+
+Learn about trait objects
+
+Lifetimes: labels only used by the compiler `pub fn<'a> (param:&'a i32)`
+
+trait bounds: use `where` (and not the addition `T1+T2`), so `struct<T> where T`
+
+impl for traits: `impl<T:X> Trait_name for T {...}` implements something for a trait
+
+nice syntatic sugar: `while let x=badfunc()` only iterates to things not None
+
+`fn exit() -> !` is forbidden, it only indicates functions that will never return
+
+implicits derefs `x.method()` for `x` of type `T &T Box<T> Rc<T>`
+
+turbofish `X::<T>::static` methods
+
+`trait Deref` allows for deref coercion, such as `Box<T>....->....&T`
+
+closure with return type `|x|->T{}`
+
+nice: `dbg!` macro
+
+macros: `panic! should_panic! assert_eq! assert_ne! eprintln!` for testing
+
+how to use closures: `Fn` borrows, `FnOnce` consumes the closure, `FnMut` borrows a mut
 
