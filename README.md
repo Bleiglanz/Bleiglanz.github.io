@@ -424,3 +424,20 @@ macros: `panic! should_panic! assert_eq! assert_ne! eprintln!` for testing
 
 how to use closures: `Fn` borrows, `FnOnce` consumes the closure, `FnMut` borrows a mut
 
+good to know formatters ```{:b}``` binary, ```{:o}``` octal and ```{:x}``` hex
+
+array literals ```[T;n]``` is the type, and it is set to ```[a,b,c]``` or ```[a;3]``` (repeat)
+
+io ```BufReader.lines()``` removes all line feeds from input
+
+use ```unimplemented!()``` macro for things to do
+
+use ```#[allow(...)]``` can be used to supress warnings: unused_var, dead_code
+
+the ```String.from(...)``` creates a new ownded string on the heap
+
+derive PartialEq for structs, useful for the newtype pattern: ```struct Bohnen(String)```
+
+
+
+
